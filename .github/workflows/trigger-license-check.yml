@@ -1,0 +1,10 @@
+
+name: Trigger License Check
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  call-license-check:
+    uses: brcm-test/.github/.github/workflows/license-check.yml@main
